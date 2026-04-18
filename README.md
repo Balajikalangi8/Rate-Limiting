@@ -194,3 +194,8 @@ The token count and the last-refill timestamp must be updated **atomically toget
 ### Memory management
 
 A `@Scheduled` task evicts buckets idle longer than `eviction-ttl-seconds`. Without this, each unique IP (scanners, bots, ephemeral clients) permanently leaks a `TokenBucket` entry.
+
+
+Testing :
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3cf1dc7a-4322-4017-add1-f272d1ab8b58" />
+
