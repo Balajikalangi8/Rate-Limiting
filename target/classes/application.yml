@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: rate-limiter
+
+# ─────────────────────────────────────────────
+# Rate limiter configuration (externalized)
+# ─────────────────────────────────────────────
+rate-limiter:
+  # Maximum number of tokens a bucket can hold
+  capacity: 10
+  # Tokens added back per second (refill rate)
+  refill-rate: 5
+  # When true, each unique IP gets its own bucket;
+  # when false, all clients share one global bucket
+  per-ip: true
+  # Stale bucket cleanup: evict buckets idle for this many seconds
+  eviction-ttl-seconds: 300

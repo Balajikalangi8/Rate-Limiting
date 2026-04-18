@@ -1,0 +1,40 @@
+{
+  "groups": [
+    {
+      "name": "rate-limiter",
+      "type": "com.example.ratelimiter.model.RateLimitProperties",
+      "sourceType": "com.example.ratelimiter.model.RateLimitProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rate-limiter.capacity",
+      "type": "java.lang.Long",
+      "description": "Maximum tokens the bucket can hold (burst capacity).",
+      "sourceType": "com.example.ratelimiter.model.RateLimitProperties",
+      "defaultValue": 10
+    },
+    {
+      "name": "rate-limiter.eviction-ttl-seconds",
+      "type": "java.lang.Long",
+      "description": "Seconds of inactivity after which a per-IP bucket is evicted.",
+      "sourceType": "com.example.ratelimiter.model.RateLimitProperties",
+      "defaultValue": 300
+    },
+    {
+      "name": "rate-limiter.per-ip",
+      "type": "java.lang.Boolean",
+      "description": "When true, each client IP gets its own independent bucket.",
+      "sourceType": "com.example.ratelimiter.model.RateLimitProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "rate-limiter.refill-rate",
+      "type": "java.lang.Double",
+      "description": "Tokens added per second (steady-state throughput).",
+      "sourceType": "com.example.ratelimiter.model.RateLimitProperties",
+      "defaultValue": 5
+    }
+  ],
+  "hints": []
+}

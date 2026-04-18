@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ratelimiter.TokenBucketTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.492 s -- in com.example.ratelimiter.TokenBucketTest
